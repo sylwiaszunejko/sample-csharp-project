@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>SylwiaSzunejko.SampleLibrary</PackageId>
+    <Version>0.0.1</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Authors>Your Name</Authors>
+    <Company>Your Company</Company>
+    <Product>Sample Library</Product>
+    <Description>A sample C# library for testing release processes with comprehensive NuGet metadata.</Description>
+    <Summary>Sample library demonstrating proper NuGet package configuration</Summary>
+    <PackageProjectUrl>https://github.com/sylwiaszunejko/sample-csharp-project</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sylwiaszunejko/sample-csharp-project</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>sample;library;demo;nuget</PackageTags>
+    <PackageReleaseNotes>Initial release of the sample library</PackageReleaseNotes>
+    <Copyright>Copyright © Your Company 2025</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Build Configuration -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" Condition="Exists('icon.png')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+</Project>

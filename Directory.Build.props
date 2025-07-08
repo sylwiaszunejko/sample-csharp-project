@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- Global properties for all projects -->
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <WarningsNotAsErrors>NU1605</WarningsNotAsErrors>
+    <NoWarn>$(NoWarn);CS1591</NoWarn> <!-- Missing XML comment warnings -->
+
+    <!-- Source Link configuration -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+</Project>
