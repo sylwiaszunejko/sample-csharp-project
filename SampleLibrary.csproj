@@ -8,8 +8,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <!-- NuGet Package Metadata -->
-    <PackageId>SylwiaSzunejko.SampleLibrary</PackageId>
-    <Version>0.0.1</Version>
+    <PackageId>SylwiaSzunejko.SampleLibrary.DRYRUN</PackageId>
+    <Version>0.0.1.1</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <Authors>Your Name</Authors>
